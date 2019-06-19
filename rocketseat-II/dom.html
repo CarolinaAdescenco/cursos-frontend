@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalhando com um DOM</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome" class="nomeclass">
+        <!-- <input type="text" name="nome" id="nome2" class="nomeclass"> -->
+        <button id="btnAdd" class="adicionar">Adicionar</button>
+    </div>
+
+    <script>
+        // MÉTODOS DE ACESSO AOS ELEMENTOS
+
+        // var inputElement = document.getElementById('nome');
+
+        // -------------------------------------------------------------
+
+        //pega os elementos que possuem a tag input, como não tem como garantir que é único, ele retorna um vetor.
+        // Para acessar o input desejado, pode se passar a sua posição dentro do []
+        // var inputElementTag = document.getElementsByTagName('input')[0];
+
+        // -------------------------------------------------------------
+
+        // Através da class, também retorna um vetor
+        // var inputElementClass = document.getElementsByClassName('nomeclass')[0];
+        //console.log(inputElementClass);
+
+        // -------------------------------------------------------------
+
+        // QuerySelector permite percorrer a DOM em busca do elemento desejado, assim deve-se declarar o pai do elemento e ele
+        // Sempre retorna um único elemento, ou seja, o primeiro que ele encontrar
+        // var inputQuery = document.querySelector('div#app nome');
+        //console.log(inputQuery);
+
+        // -------------------------------------------------------------
+
+        // Referenciando propriedades do elemento, é necessário buscar dentro dos colchetes a propriedade desejada
+        // var inputQueryProp = document.querySelector('button[class=adicionar]');
+        // console.log(inputQueryProp);
+
+        // -------------------------------------------------------------
+
+        // QuerySelectorAll retorna todos os elementos, caso haja mais de um com os mesmos tipos
+        //var inputSelectorAll = document.querySelectorAll('input');
+        //console.log(inputSelectorAll);
+        
+        // -------------------------------------------------------------
+
+        var inputElement = document.querySelector('input');
+        var btnAdd = document.querySelector('button');
+
+        btnAdd.onclick = function(){
+            
+            //exibe o texto digitado pelo usuário no input
+            var text = inputElement.value;
+            alert(text);
+        }
+
+
+
+    </script>
+</body>
+</html>

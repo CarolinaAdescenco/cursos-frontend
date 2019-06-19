@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lidando com elementos</title>
+</head>
+<body>
+
+    <div id="app"></div>
+        <input id="nome"/>
+    <script>
+
+        // cria um elemento a para o link
+        var linkElement = document.createElement('a');
+
+        // primeiro parâmetro é o atributo e o segundo é o valor que a propriedade receberá
+        linkElement.setAttribute('href', 'http://rocketseat.com.br');
+        linkElement.setAttribute('title', 'Site da Rocketseat');
+
+        //cria um elemento que dará texto ao link
+        var textElement = document.createTextNode('Acessar Rocketseat');
+
+        // colocando o textElement junto com o link
+        linkElement.appendChild(textElement);
+
+        //Acessa o elemento #app
+        var containerElement = document.querySelector('#app');
+
+        //inclui o elemento criado dentro do elemento #app
+        containerElement.appendChild(linkElement);
+
+        // removendo o campo input através do Js
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild(inputElement);
+
+    </script>
+    
+</body>
+</html>

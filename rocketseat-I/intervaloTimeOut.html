@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intervalo e Time Out</title>
+</head>
+<body>
+    
+
+    <script>
+        // é uma função que é executado várias vezes dentro de um intervalo 
+
+        function exibeAlgo(){
+            console.log('Hello World');
+        }
+
+        //Primeiro chama a função e depois a cada quanto tempo ela irá ser chamada
+        setInterval(exibeAlgo, 1000);
+
+        //Time Out serve para chamar apenas uma vez, mas o segundo parâmetro serve para dizer quanto tempo demorará para aparecer
+        setTimeout(exibeAlgo, 2000);
+    </script>
+</body>
+</html>

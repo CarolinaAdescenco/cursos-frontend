@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+
+    <script>
+        //AND = &&, OR = ||, NOT = !
+
+        var sexo = 'M', idade = 23;
+
+        if (sexo === 'M' && idade >= 18){
+            console.log('Homem maior de 18 anos')
+        } else if (sexo === 'M' || idade >= 18){
+            console.log('Homem ou maior de 18 anos');
+        } else if (sexo !== 'M'){
+            //verifica a desigualdade entre a váriavel e a condição
+            console.log('Verificação de desigualdade');
+        }
+
+
+        // var sexo2 = 'M';
+        // if (sexo2 === 'F'){
+        //     feminino = true;
+        // } else {
+        //     feminino = false;
+        // }
+
+        // SIMPLIFICANDO
+        var sexo2 = 'F';
+
+        var feminino = sexo2 === 'F';
+
+        console.log(feminino);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 3</title>
+</head>
+<body>
+
+    <ul></ul>
+
+    <script>
+        
+        // declara o vetor
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        // seleciona o elemento
+        var ulElement = document.querySelector('ul');
+
+        // loop
+        for(nome of nomes){
+            // cria o elemento
+            var liElement = document.createElement('li');
+            // pega o texto do vetor
+            var textElement = document.createTextNode(nome);
+
+            // coloca o texto dentro da li
+            liElement.appendChild(textElement);
+            // coloca a li dentro da ul
+            ulElement.appendChild(liElement);
+        }
+
+    
+    </script>
+    
+</body>
+</html>

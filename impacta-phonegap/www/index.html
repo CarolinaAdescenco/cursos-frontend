@@ -1,0 +1,92 @@
+<!-- Adicionar na tabela usando js um nova tarefa
+Create element, getElement, QuerySelector, etc
+
+datas em js
+
+date.toLocaleDataString - Data
+date.toLocaleTimeString - Hora
+date.toLocaleString - Data e Hora
+
+offset-md-3 = aplica offset apenas para desktop
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge	">
+     <link rel="stylesheet" href="bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+     <title>Tarefas</title>
+ </head>
+ <body>
+ 
+     <main class="container">
+ 
+         <div class="row mt-5">
+             <div class="col-12">
+                 <h1 class="text-center">Tarefas</h1>
+             </div>
+         </div>	
+         
+         <div class="row">
+             <div class="col-12">
+                 <div class="input-group">
+                     <input class="form-control py-2" type="text" id="tarefa" placeholder="Nova tarefa">
+                     <div class="input-group-append">
+                         <button class="btn btn-primary" id="btn_criar">Criar tarefa</button>
+                     </div>
+                 </div>				
+             </div>
+         </div>
+         
+             
+         
+             
+         
+         <section class="py-3">
+             <div class="row justify-content-center">
+                 <div class="col-12">
+                     <div class="table-responsive">
+                         <table class="table table-striped" id="tarefas">
+                             <thead class="table">
+                                 <tr>
+                                     <th>Seleção</th>
+                                     <th>Tarefa</th>
+                                     <th>Data</th>
+                                 </tr>
+                             </thead>
+                             <tbody>				
+                             </tbody>			
+                         </table>
+                     </div>					
+                 </div>				
+             </div>
+         </section>
+ 
+         <div class="row">
+             <div class="col-12 col-md-4 offset-md-2 mb-1 ">
+                 <button class="btn btn-success btn-block py-2 px-2"  id="btn_concluir">Concluir tarefa</button>
+             </div>
+             <div class="col-12 col-md-4">
+                 <button class="btn btn-danger btn-block py-2 px-2" id="btn_del_tarefa">Excluir tarefa</button>
+             </div>
+         </div>
+
+         <div class="row mt-5">
+             <div class="col-12">
+                 <h1 class="text-center">Tarefas Concluídas</h1>
+                 <ul id="tarefas_concluidas"></ul>
+             </div>
+         </div>
+ 
+         
+ 
+     </main>
+ 
+     <script src="app.js"></script>
+     
+ </body>
+ </html>

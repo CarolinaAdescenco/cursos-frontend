@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso JS</title>
+</head>
+<body>
+
+
+    <script>
+        var nome = "Ana Carolina";
+        var idade = 20;
+        var peso = 64.5;
+        var humano = true;
+
+        // Array
+        var alunos = ['Ana Carolina', 'Rodrigo', 'Guilherme' ];
+
+        // Objetos - o que está declarado dentro do objeto aluno, são suas propriedades (nome, idade, humano)
+        var aluno = {
+            nome: 'Ana Carolina',
+            idade: 20,
+            peso: 64.5,
+            humano: true
+        };
+
+        // para acessar uma posição do Array
+        console.log(alunos[1]);
+
+        // para acessar uma propriedade do objeto
+        console.log(aluno.nome);
+
+        //OPERAÇÕES MATEMÁTICAS
+        // ao invés de declarar duas vezes "var", pode ser declarado uma vez só
+
+        var x = 5, y = 10;
+
+        var resultado = x + y;
+        console.log(resultado);
+
+        // se uma das variáveis for uma string e a outra um numero, ele não irá somar as duas e sim concatená-las
+
+        // incrementar variável
+        var y = 10;
+        // y = y + 10; Simplificado: 
+        y += 10;
+        console.log(y);
+    </script>
+</body>
+</html>

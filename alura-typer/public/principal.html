@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Alura Typer</h1>
+        <p class="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
+        <div class="center">
+            <img src="img/spinner.gif" alt="Spinner" id="spinner"> 
+            <p id="erro">Ocorreu um erro, por favor tente novamente!</p>
+        </div>
+
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-frase"></span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempo-digitacao">3</span> segundos
+            </li>
+        </ul>
+    
+        <textarea id="campo-digitacao" cols="30" rows="10"></textarea>
+
+        <div class="botoes">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="btn-reiniciar">
+                <i class="material-icons">restore</i>
+            </a>
+            <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green">
+                <i class="material-icons">assignment</i>
+            </a>
+            <a id="botao-frase" class="btn-floating btn-large waves-effect waves-light blue">
+                <i class="material-icons">shuffle</i>
+            </a>
+            <a id="botao-frase-id" class="btn-floating btn-large waves-effect waves-light pink">
+                <i class="material-icons">repeat_one</i>
+            </a>
+            <input type="number" id="id-frase" min="0">
+        </div>
+        
+        <ul class="informacoes center">
+            <li><span id="caracteres-digitados">0</span> caracteres.</li>
+            <li><span id="palavras-digitadas">0</span> palavras.</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Nº de palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+    <script src="js/frase.js"></script>
+</body>
+</html>
